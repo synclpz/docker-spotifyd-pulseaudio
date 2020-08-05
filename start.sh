@@ -15,5 +15,5 @@ docker run -d \
     --volume $PWD/spotifyd.conf:/etc/spotifyd/spotifyd.conf \
     --user $(id -u):$(id -g) \
     --net host \
-    --name spotifyd-pulseaudio
+    --name spotifyd-pulseaudio \
     spotifyd-pulseaudio
