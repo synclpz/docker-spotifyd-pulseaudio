@@ -4,7 +4,7 @@ CACHE_DIR=spotifyd
 
 mkdir -p $CACHE_DIR
 
-PA_SOCKET="$(LC_ALL=C pactl info | grep 'Server String' | cut -f 3 -d' ')
+PA_SOCKET="$(LC_ALL=C pactl info | grep 'Server String' | cut -f 3 -d' ')"
 
 docker run -d \
     --env PULSE_SERVER=unix:/tmp/pulseaudio.socket \
