@@ -12,7 +12,7 @@ docker run -d \
     --volume $PA_SOCKET:/tmp/pulseaudio.socket \
     --volume $PWD/pulseaudio.client.conf:/etc/pulse/client.conf \
     --volume $PWD/$CACHE_DIR:/spotifyd \
-    --volume $PWD/spotifyd.conf:/etc/spotifyd/spotifyd.conf \
+    --volume $PWD/spotifyd.conf:/etc/spotifyd.conf \
     --user $(id -u):$(id -g) \
     --net host \
     --name spotifyd-pulseaudio \
